@@ -1,0 +1,124 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 70px;
+  font-family: 'Lato', sans-serif;
+  background-color: whitesmoke;
+  color: 2f2f2f;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+}
+
+.logo {
+  width: 75%;
+}
+
+.nav-item {
+  font-size: 1.2em;
+  padding-right: 5px;
+}
+
+hr {
+  border: 1px solid darkslategrey;
+}
+
+
+header {
+  background-image: url("../images/bg.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.heading{
+  padding-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+.about {
+  font-size: 1.35em;
+}
+
+.card-text {
+  font-size: 1.10em;
+}
+
+
+.list {
+  font-family: sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+.card-footer {
+  background-color:#000;
+}
+
+footer {
+  padding: 10px;
+  line-height: 1.6rem;
+}
+
+footer .fa {
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5%;
+}
+
+.fa-facebook:hover {
+  background: white;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.6s;
+
+}
+
+.fa-twitter:hover {
+  background: white;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.6s;
+
+}
+
+.fa-linkedin:hover {
+  background: white;
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.6s;
+
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin {
+  background: #383838;
+  color: white;
+}
+
+footer h5 {
+  text-decoration: underline;
+}
+
