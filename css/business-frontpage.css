@@ -6,52 +6,48 @@
 
 body {
   padding-top: 70px;
-  font-family: 'Lato', sans-serif;
   background-color: whitesmoke;
   color: 2f2f2f;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
 }
 
-.logo {
-  width: 75%;
-}
 
 .nav-item {
   font-size: 1.2em;
-  padding-right: 5px;
+  padding:5px 10px;
+ 
 }
+
 
 hr {
   border: 3px double #6996ad;
 }
 
-
-header {
-  background-image: url("../images/bg.jpg");
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.heading {
-  padding-top: 50px;
+header{
+  font-family: 'Roboto Slab', serif;
+  
 }
 
 h1,
 h2,
-h3,
+h3{
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+
+}
+
 h4,
 h5,
 h6 {
   font-family: 'Poppins', sans-serif;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
-
 }
 
 p {
-  font-family: 'Heebo', sans-serif;
+  font-family:'Poppins', sans-serif;
 }
 
 .about {
@@ -63,7 +59,7 @@ p {
 }
 
 li {
-  font-family: 'Heebo', sans-serif;
+  font-family:'Heebo', sans-serif;
 }
 
 .btn {
@@ -130,4 +126,8 @@ footer .fa {
 
 footer h5 {
   text-decoration: underline;
+}
+.thumbnail:hover {
+opacity: 0.25;
+transition-duration:0.6s
 }
