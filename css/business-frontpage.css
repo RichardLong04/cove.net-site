@@ -21,11 +21,13 @@ body {
 
 
 hr {
-  border: 3px double #6996ad;
+  border: 1px solid lightslategrey;
 }
 
 header{
   font-family: 'Roboto Slab', serif;
+  background-color:black;
+  margin-right:0;
   
 }
 
@@ -130,4 +132,12 @@ footer h5 {
 .thumbnail:hover {
 opacity: 0.25;
 transition-duration:0.6s
+}
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
 }
