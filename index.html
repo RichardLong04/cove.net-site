@@ -19,7 +19,7 @@
 <body>
   <!----------Navigation---------->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#6996ad;">
-    <div class="container">
+    <div class="container-fluid px-5">
       <a class="navbar-brand" href="index.html">
         <h2>cove.net llc</h2>
       </a>
@@ -38,13 +38,15 @@
           <li class="nav-item">
             <a class="nav-link" href="services.html">SOLUTIONS</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!----------Header---------->
   <header>
-
     <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -62,38 +64,22 @@
   <div class="container-fluid py-3 mb-4" style="background-color:#6996ad; color:white;">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1 class=" head"><small>Using Technology to Improve Society</small></h1>
+        <h1 class=" head">Using Technology to Improve Society</h1>
       </div>
     </div>
   </div>
-
-
   <!----------About---------->
   <div class="container">
+    <h2>Who We Are</h2>
+    <hr>
     <div class="row">
       <div class="col-md-8 mb-5">
-        <h2>Who We Are</h2>
-        <hr>
-        <p class="about">Cove.net LLC is a Pittsburgh based technology services company that is as diverse as the city itself. Supporting Manufacturing, Information Technology, Healthcare, Education, A/E and Construction, Government and Science. We create solutions for companies where others are afraid to.</p>
+        <p class="about pl-3">Cove.net LLC is a Pittsburgh based technology services company that is as diverse as the city itself. Supporting Manufacturing, Information Technology, Healthcare, Education, A/E and Construction, Government and Science. We create solutions for companies where others are afraid to.</p>
         <a class="btn btn-dark btn-md text-warning" href="about.html">Read More&rarr;</a>
       </div>
-      <!----------Contact---------->
-      <div class="col-md-4 mb-5">
-        <h2>Contact Us</h2>
-        <hr>
-        <address>
-          <strong>Gary Jackson</strong>
-          <br>3001 Windsong LN #202
-          <br>Canonsburg, PA  15317
-          <br>
-        </address>
-        <address>
-          <p><i class="fa fa-phone"></i>
-          [412] 403-3080
-          <br>
-           <i class="fa fa-envelope"></i>
-          <a href="mailto:covenet.jackson@gmail.com" class="text-primary">covenet.jackson@gmail.com</a></p>
-        </address>
+      <div class="col-md-4">
+       
+      <img class="img-fluid rounded img-thumbnail border border-dark"  data-toggle="tooltip" data-placement="bottom" data-html="true" title="Please call us at <br/><strong>[412] 403-3080</strong>" src="images/burgh.jpg">
       </div>
     </div>
   </div>
@@ -174,7 +160,6 @@
             <ul class="card-text">
               <li>AWS and Azure</li>
               <li>Hosting and Backup</li>
-
             </ul>
           </div>
           <div class="card-footer">
@@ -378,6 +363,12 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script>
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+  </script>
 </body>
 
 </html>
