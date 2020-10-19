@@ -30,7 +30,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">HOME</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">ABOUT</a>
           </li>
           <li class="nav-item ">
@@ -56,19 +56,20 @@
       <li class="breadcrumb-item active" style="color:lightskyblue;">CONTACT</li>
     </ol>
   </div>
-   <!----------Contact---------->
+  <!----------Contact---------->
   <div class="container">
     <h3>Contact Information</h3>
     <hr>
+
     <div class="row">
       <div class="col-md-4 mb-4">
-        <address class="pl-3">
+        <address class="pl-1">
           <strong>Gary Jackson</strong>
           <br>3001 Windsong LN #202
           <br>Canonsburg, PA  15317
           <br>
         </address>
-        <address class="pl-3">
+        <address class="pl-1">
           <p><i class="fa fa-phone"></i>
           [412] 403-3080
           <br>
@@ -76,11 +77,31 @@
           <a href="mailto:covenet.jackson@gmail.com" class="text-primary">covenet.jackson@gmail.com</a></p>
         </address>
       </div>
+      <div class="col-md-6 pl-3  mb-5 mx-auto">
+        <div class="contact-form">
+          <form role="form" class="form" action="contact.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+              <input name="name" type="text" class="form-control fname" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input name="email" type="email" class="form-control aemail" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <input name="subject" type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea name="message" class="form-control annmes" rows="3" placeholder="Enter Your Message Here"></textarea>
+            </div>
+            <p id="thanks">Thanks, Talk to You Soon 
+            !</p>
+
+            <button type="button" class="btn btn-danger btn-sm btn-block annbtn">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-  <container class="text-center">
-    <h2>site under construction<br/> comming soon!</h2>
-  </container>
+
   <!----------Footer---------->
   <footer class="container-fluid  text-black text-center bottom-0" style="background-color:#6996ad;">
     <div class="container">
@@ -114,6 +135,31 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function() {
+
+      $(".form-control").hover(function() {
+        $(this).toggleClass("newhover");
+      });
+
+      /* -------------------------- Click Function to FadTo/Get/and Set Values --------------------------- */
+      $(".annbtn").click(function() {
+        $(".contact-form").fadeTo("slow", 0.5);
+
+        $("#thanks").text("Thanks" + " " + $(".fname").val() + " " + "we will contact you soon at" + " " + $(".aemail").val());
+        $(".annmes").val("Your Message Was Sent!");
+      }); //end click
+      $(document).on('click', "#ResetForm", function() {
+        document.getElementById('CustomizationForm').reset();
+      });
+
+
+
+    }); //end jQuery code
+
+  </script>
+
+
 </body>
 
 </html>
