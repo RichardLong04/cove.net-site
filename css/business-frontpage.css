@@ -21,7 +21,7 @@ body {
 
 
 hr {
-  border: 1px solid #606b8b;
+  border:2px double #606b8b;
 }
 
 header {
@@ -29,6 +29,9 @@ header {
   background-color: black;
   margin-right: 0;
 
+}
+.box {
+  box-shadow:5px 5px 5px darkgray;
 }
 
 h1,
@@ -50,6 +53,8 @@ h6 {
 
 p {
   font-family: 'Poppins', sans-serif;
+  font-size:1.2em;
+  line-height: 1.2em;
 }
 
 .about {
@@ -74,6 +79,7 @@ li {
   font-size: 1.15em;
   line-height: 1.2em;
 }
+
 
 .card-footer {
   background-color: black;
@@ -175,7 +181,7 @@ footer h5 {
 .newhover {
   background-color:blanchedalmond;
   border: 3px solid #CCC;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 /*-----------------------*/
